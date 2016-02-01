@@ -10,4 +10,16 @@
  */
 public class Jon {
     
+    private int age;
+    private String greeting;
+    
+    public Jon(int age, String greeting){
+        this.age = age;
+        this.greeting = greeting;
+    }
+    
+    public void hello(){
+        System.out.println("I'm Jon, " + this.greeting + " I am " + this.age + " years old");
+    }
+    
 }
