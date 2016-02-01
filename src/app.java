@@ -19,6 +19,7 @@ public class app {
         Jon jon = new Jon(20, "Hello!");
         jon.intro();
         
+        System.out.println("hi there");
     }
     
 }
