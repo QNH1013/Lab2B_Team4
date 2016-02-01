@@ -15,6 +15,10 @@ public class app {
      */
     public static void main(String[] args) {
         System.out.println("Yo");
+        
+        Jon jon = new Jon(20, "Hello!");
+        jon.intro();
+        
     }
     
 }

@@ -18,7 +18,7 @@ public class Jon {
         this.greeting = greeting;
     }
     
-    public void hello(){
+    public void intro(){
         System.out.println("I'm Jon, " + this.greeting + " I am " + this.age + " years old");
     }
     
