@@ -8,6 +8,16 @@
  *
  * @author Jon
  */
-public class Personal {
+public class Personal extends Customer{
+    
+    private int accountNumber;
+    private String firstName;
+    private String lastName;
+    
+    public Personal(int accountNumber, String firstName, String lastName){
+        super(accountNumber);
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
     
 }

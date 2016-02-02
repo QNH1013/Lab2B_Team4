@@ -8,6 +8,12 @@
  *
  * @author Jon
  */
-public class Account {
+public abstract class Account {
+    
+    private int accountNumber;
+    
+    public Account(int accountNumber){
+        this.accountNumber = accountNumber;
+    }
     
 }

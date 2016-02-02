@@ -8,6 +8,10 @@
  *
  * @author Jon
  */
-public class Savings {
+public class Savings extends Account{
+    
+    public Savings(int accountNumber){
+        super(accountNumber);
+    }
     
 }
