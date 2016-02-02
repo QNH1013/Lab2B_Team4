@@ -10,4 +10,12 @@
  */
 public class Currency {
     
+    private int money;
+    private int conversion;
+    
+    public Currency(int money, int conversion){
+        this.money = money;
+        this.conversion = conversion;
+    }
+    
 }
