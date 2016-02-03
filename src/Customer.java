@@ -1,10 +1,14 @@
 
 public class Customer {
     
-    private int accountNumber;
+    private Account account;
     
-    public Customer(int accountNumber){
-        this.accountNumber = accountNumber;
+    public Customer(Account account){
+        this.account = account;
+    }
+    
+    public int getAccount(){
+        return account.getAccountNumber();
     }
     
 }

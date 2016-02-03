@@ -7,4 +7,8 @@ public abstract class Account {
         this.accountNumber = accountNumber;
     }
     
+    public int getAccountNumber(){
+        return accountNumber;
+    }
+    
 }
