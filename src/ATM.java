@@ -1,31 +1,23 @@
 
 public class ATM extends Currency 
 {
-    int moneyDeposit;
-    int moneyWithdraw;
     
-    public ATM(int money,int conversion,int moneyDeposit, int moneyWithdraw)
+    private Account account;
+    
+    public ATM(Account account)
     {
-        super(money, conversion);
-        this.moneyDeposit= moneyDeposit;
-        this.moneyWithdraw=moneyWithdraw;
+        super(account);
+
     }
-     public int DepositedMoney()
+     public void DepositedMoney(int deposite)
      {
-         return money = DepositMoney() + money;
+         System.out.println(deposite);
+         account.setBalance(account.getBalance() + deposite);
      }
-    public int DepositMoney()
+     
+    public void WithdrawMoney(int withdrawl)        
     {
-        return moneyDeposit;
-        //test
-    }
-    public int WithdrawMoney()        
-    {
-        return money = WithdrawalAmount() - money;
-    }
-    public int WithdrawalAmount()
-    {
-        return moneyDeposit;
+        account.setBalance(account.getBalance() - withdrawl);
     }
     
 }

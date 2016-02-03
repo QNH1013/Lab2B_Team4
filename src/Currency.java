@@ -8,14 +8,22 @@
  *
  * @author Jon
  */
-public class Currency {
+public abstract class Currency {
     
     int money;
-    private int conversion;
+    private Account account;
     
-    public Currency(int money, int conversion){
+    public Currency(Account account){
         this.money = money;
-        this.conversion = conversion;
+        this.account = account;
+    }
+    
+    public int getMoney(){
+        return money;
+    }
+    
+    public int getBalance(){
+        return account.getBalance();
     }
     
 }

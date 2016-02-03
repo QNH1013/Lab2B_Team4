@@ -11,4 +11,8 @@ public class Customer {
         return account.getAccountNumber();
     }
     
+    public Account returnAccount(){
+        return this.account;
+    }
+    
 }
