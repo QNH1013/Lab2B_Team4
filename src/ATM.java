@@ -15,5 +15,6 @@ public class ATM extends Currency
     public int DepositMoney()
     {
         return moneyDeposit;
+        //test
     }
 }
