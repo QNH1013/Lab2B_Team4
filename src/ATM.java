@@ -2,13 +2,15 @@
 public class ATM extends Currency 
 {
     int moneyDeposit;
+    int moneyWithdraw;
     
-    public ATM(int money,int conversion)
+    public ATM(int money,int conversion,int moneyDeposit, int moneyWithdraw)
     {
         super(money, conversion);
         this.moneyDeposit= moneyDeposit;
+        this.moneyWithdraw=moneyWithdraw;
     }
-     public int WithrawalMoney()
+     public int DepositedMoney()
      {
          return money = DepositMoney() + money;
      }
@@ -17,4 +19,13 @@ public class ATM extends Currency
         return moneyDeposit;
         //test
     }
+    public int WithdrawMoney()        
+    {
+        return money = WithdrawalAmount() - money;
+    }
+    public int WithdrawalAmount()
+    {
+        return moneyDeposit;
+    }
+    
 }
