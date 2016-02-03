@@ -10,7 +10,7 @@
  */
 public class Currency {
     
-    private int money;
+    int money;
     private int conversion;
     
     public Currency(int money, int conversion){

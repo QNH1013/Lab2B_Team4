@@ -1,13 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Jon
- */
-public class Checks {
+public class Checks extends Account 
+{
+    int CheckNumber;
+    int CheckAmount;
+    
+    public Checks(int accountNumber)
+    {
+        super(accountNumber);
+                {
+                    this.CheckAmount = CheckAmount;
+                    this.CheckNumber = CheckNumber;
+                }
+    }
     
 }

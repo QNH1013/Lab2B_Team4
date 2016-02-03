@@ -1,13 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Jon
- */
-public class ATM {
+public class ATM extends Currency 
+{
+    int moneyDeposit;
     
+    public ATM(int money,int conversion)
+    {
+        super(money, conversion);
+        this.moneyDeposit= moneyDeposit;
+    }
+     public int WithrawalMoney()
+     {
+         return money = DepositMoney() + money;
+     }
+    public int DepositMoney()
+    {
+        return moneyDeposit;
+    }
 }
