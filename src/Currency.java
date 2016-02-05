@@ -8,22 +8,18 @@
  *
  * @author Jon
  */
-public abstract class Currency {
+public class Currency {
     
-    int money;
     private Account account;
     
     public Currency(Account account){
-        this.money = money;
+        
         this.account = account;
+        
     }
     
-    public int getMoney(){
-        return money;
-    }
-    
-    public int getBalance(){
-        return account.getBalance();
+    public Account getAccount(){
+        return account;
     }
     
 }
