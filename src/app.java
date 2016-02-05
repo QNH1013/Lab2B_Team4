@@ -8,8 +8,8 @@ public class app {
         
         ATM atm = new ATM();
         atm.newUser();
-        atm.DepositeMoney(600);
-        atm.WithdrawMoney(30);
+        atm.DepositeMoney(500);
+        atm.WithdrawMoney(100);
           
     }
 }

@@ -7,7 +7,7 @@ public class Customer {
         this.account = account;
     }
     
-    public int getAccount(){
+    public long getAccount(){
         return account.getAccountNumber();
     }
     

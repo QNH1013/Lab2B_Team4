@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import java.util.Random;
 
 
 public class ATM {
@@ -16,19 +17,24 @@ public class ATM {
         
         int accountType = in.nextInt();
         
+        Random random = new Random();
+        int accountNumber = random.nextInt(999999999)+10000000;
+        
         Account account = null;
         Customer customer = null;
         
         if(accountType == 1){
-            account = new Savings(01234567, 0);
+            account = new Savings(accountNumber, 0);
         }else{
-            account = new Checking(01234567, 0);
+            account = new Checking(accountNumber, 0);
         }
         
         System.out.println("What type of user are you?");
         System.out.println("Press '1' for personal and press '2' for commercial.");
         
         int customerType = in.nextInt();
+        
+        System.out.println();
         
         if(customerType == 1){
             
@@ -54,6 +60,7 @@ public class ATM {
     
     public void DepositeMoney(int deposite) {
         System.out.println("-------------------------");
+        System.out.println("Account number: " + currency.getAccount().getAccountNumber());
         System.out.println("Balance: $" + currency.getAccount().getBalance());
         System.out.println("Deposite: $" + deposite);
         currency.getAccount().setBalance(currency.getAccount().getBalance() + deposite);
@@ -63,6 +70,7 @@ public class ATM {
      
     public void WithdrawMoney(int withdrawl) {
         System.out.println("-------------------------");
+        System.out.println("Account number: " + currency.getAccount().getAccountNumber());
         System.out.println("Balance: $" + currency.getAccount().getBalance());
         System.out.println("Withdrawl: $" + withdrawl);
         currency.getAccount().setBalance(currency.getAccount().getBalance() - withdrawl);
