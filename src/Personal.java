@@ -1,7 +1,6 @@
 
 public class Personal extends Customer{
     
-    private int accountNumber;
     private String firstName;
     private String lastName;
     
